@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <title>to-do-list</title>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="app_name layer" data-speed="10"></div>
+    <div class="pen layer" data-speed="70"> </div>
+    <div class="school-bag layer" data-speed="30"> </div>
+
+
+    <div class="calendar"  id="calendar">
+        <p class="month">
+            <span class="arrow" id="arrow-prev_month">
+                <input type="button" value="⮜" class="fas fa-chevron-left">
+            </span>
+            <span id="span-month" class="span-month"></span>
+            <span class="arrow" id="arrow-next_month">
+                <input type="button" value="⮞" class="fas fa-chevron-right">
+            </span>
+            <br>
+            <span class="arrow" id="arrow_prev-year">
+                <input type="button" value="⮜⮜" class="fas fa-chevron-left">
+            </span>
+            <span id="span-year" class="span-year"></span>
+            <span class="arrow" id="arrow_next-year">
+                <input type="button" value="⮞⮞" class="fas fa-chevron-right">
+            </span><br>
+        </p>  
+        <table class="calendar__table" id="calendar__table"></table>
+    </div>
+    </div>
+<!-- Modal window -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <input type="button" value="&times" id="close-modal">
+            <p>Modal!!</p>
+        </div>
+    </div>
+            
+    <script src="js/parallax.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
